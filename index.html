@@ -12,6 +12,7 @@
     />
     <link href="reset.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <link href="media.css" rel="stylesheet" />
     <title>MST</title>
   </head>
   <body>
@@ -20,9 +21,12 @@
         <nav class="header-nav">
           <p class="logo">MST</p>
           <ul class="header-menu">
-            <li class="header-menu__item">consectetur</li>
-            <li class="header-menu__item">sit amet</li>
-            <li class="header-menu__item">eiusmod tempor</li>
+            <li class="header-menu__item">Developers</li>
+            <li class="header-menu__item">About the company</li>
+            <li class="header-menu__item">contacts</li>
+            <li>
+              <img class="burger-menu" src="img/icons/menu.svg" alt="menu" />
+            </li>
           </ul>
         </nav>
       </div>
@@ -30,53 +34,54 @@
 
     <main>
       <section class="preview">
-        <div class="container preview-container">
-          <div class="preview-content">
-            <h1 class="preview-title">In the heart of a bustling</h1>
-            <span class="preview-subtitle">sed do eiusmod</span>
-            <ul class="preview-price">
-              <li class="price-item">
-                <img
-                  class="price-icon"
-                  src="img/icons/price-icon.svg"
-                  alt="price-icon"
-                />
-                <p class="price-text">
-                  do&nbsp;<span>$10 000</span>&nbsp;consectetur elit
-                </p>
-              </li>
-              <li class="price-item">
-                <img
-                  class="price-icon"
-                  src="img/icons/price-icon.svg"
-                  alt="price-icon"
-                />
-                <p class="price-text">
-                  &nbsp;<span>30%</span>&nbsp;sed do eiusmod tempor 
-                </p>
-              </li>
-              <li class="price-item">
-                <img
-                  class="price-icon"
-                  src="img/icons/price-icon.svg"
-                  alt="price-icon"
-                />
-                <p class="price-text">
-                  do&nbsp;<span>17%</span>&nbsp;adipiscing elit sed do
-                </p>
-              </li>
-            </ul>
-            <button class="preview-button">Order</button>
-          </div>
+        <div class="container">
+          <div class="preview-wrapper">
+            <div class="preview-content">
+              <h1 class="preview-title">In the heart of a bustling</h1>
+              <span class="preview-subtitle">Advantages</span>
+              <ul class="preview-price">
+                <li class="price-item">
+                  <img
+                    class="price-icon"
+                    src="img/icons/price-icon.svg"
+                    alt="price-icon"
+                  />
+                  <p class="price-text">
+                    <span>10 000</span>&nbsp; luxury housing
+                  </p>
+                </li>
+                <li class="price-item">
+                  <img
+                    class="price-icon"
+                    src="img/icons/price-icon.svg"
+                    alt="price-icon"
+                  />
+                  <p class="price-text"><span>15%</span>&nbsp;down payment</p>
+                </li>
+                <li class="price-item">
+                  <img
+                    class="price-icon"
+                    src="img/icons/price-icon.svg"
+                    alt="price-icon"
+                  />
+                  <p class="price-text"><span>70%</span>&nbsp;fully equipped</p>
+                </li>
+              </ul>
+              <button class="preview-button">Order</button>
+            </div>
 
-          <img class="preview-img" src="img/1.jpg" alt="" />
+            <img class="preview-img" src="img/1.jpg" alt="" />
+          </div>
         </div>
       </section>
 
       <section class="advantages">
-        <div class="container advantages-container">
+        <div class="container">
           <div class="advantages-wrapper">
-            <img src="img/2.jpg" alt="" />
+            <div class="advantages-img_box">
+              <img src="img/2.jpg" alt="" />
+            </div>
+
             <div class="advantages-content">
               <ul class="advantages-list">
                 <li class="list-item">
@@ -108,9 +113,8 @@
                     alt=""
                   />
                   <p class="advantages-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor 
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod
+                    tempor
                   </p>
                 </li>
                 <li class="list-item">
@@ -127,10 +131,14 @@
               </ul>
               <button class="advantages-button">Order</button>
             </div>
-            <img src="img/3.jpg" alt="" />
+
+            <div class="advantages-img_box">
+              <img src="img/3.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
+
       <section class="contact-form">
         <div class="container">
           <div class="form-wrapper">

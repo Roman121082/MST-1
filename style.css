@@ -17,29 +17,22 @@ section {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1600px;
+  max-width: 1950px;
   height: 100%;
 }
 
-.preview-container {
-  max-width: 1990px;
-  padding-left: 160px;
-}
-
-.advantages-container {
-  max-width: 1990px;
-}
-
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
   background: #222;
   border: none;
+  /* z-index: 99; */
 }
 
 .header-nav {
+  padding-left: 160px;
   display: flex;
   align-self: flex-start;
   align-items: center;
@@ -79,7 +72,6 @@ section {
   font-style: italic;
 }
 .preview {
-  height: 1000px;
   background: #222;
 }
 
@@ -89,13 +81,12 @@ section {
   background: #222;
 }
 
-.preview-img {
-  /* position: absolute;
-  right: 0;
-  top: 0; */
-  transform: translateY(-92px);
-  width: 760px;
-  height: 1090px;
+.preview-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.preview-content {
+  padding-left: 160px;
 }
 
 .preview-title {
@@ -161,6 +152,7 @@ section {
   text-transform: uppercase;
   text-align: center;
   color: #222;
+  margin-bottom: 30px;
 }
 
 .preview-button:hover {
@@ -169,7 +161,7 @@ section {
 
 .advantages-wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 35px;
 }
 
 .advantages-list {
@@ -189,6 +181,11 @@ section {
   border-bottom: none;
 }
 
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages-button {
   font-weight: 700;
   font-size: 20px;
@@ -197,19 +194,13 @@ section {
   text-align: center;
   color: #282829;
   border-radius: 4px;
-  padding: 32px 52px;
-  width: 614px;
+  padding: 32px 205px;
   height: 78px;
   background: #fff;
 }
 
 .advantages-button:hover {
   background: rgb(209, 196, 196);
-}
-
-.advantages-content {
-  padding-left: 53px;
-  padding-right: 53px;
 }
 
 .advantages-text {
@@ -223,19 +214,22 @@ section {
   justify-content: space-between;
   overflow: hidden;
   border-radius: 30px;
-  width: 1597px;
+  max-width: 1597px;
   height: 628px;
   padding-left: 134px;
   background: #fff;
+  margin: 0 auto;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   padding-top: 73px;
+  flex-grow: 1;
 }
 
 .form-title {
+  /* width: 450px; */
   font-weight: 400;
   font-size: 54px;
   line-height: 110%;
@@ -254,9 +248,10 @@ section {
   border: 2px solid #d6d6d6;
   border-radius: 4px;
   padding: 13px 20px 13px 38px;
-  width: 781px;
+  max-width: 781px;
   height: 65px;
   color: #222;
+  margin-right: 30px;
 }
 
 .form-input ::placeholder {
@@ -281,10 +276,10 @@ section {
 .form-button {
   border-radius: 4px;
   padding: 32px 20px;
-  width: 781px;
+  max-width: 781px;
   height: 100px;
   background: #282829;
-
+  margin-right: 30px;
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
@@ -295,4 +290,12 @@ section {
 
 .form-button:hover {
   background: #3c3c61;
+}
+
+.burger-menu {
+  display: none;
+  width: 60px;
+  height: 60px;
+  z-index: 9999;
+  cursor: pointer;
 }
