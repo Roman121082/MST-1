@@ -49,6 +49,10 @@
     height: auto;
   }
 
+  .photo-girl {
+    display: none;
+  }
+
   .form {
     display: block;
     margin: 0 auto;

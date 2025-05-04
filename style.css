@@ -213,15 +213,27 @@ section {
 }
 
 .form-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   border-radius: 30px;
   max-width: 1597px;
   height: 628px;
   padding-left: 134px;
   background: #fff;
   margin: 0 auto;
+}
+
+.photo-girl {
+  position: absolute;
+  width: 500px;
+  height: 730px;
+  top: -101px;
+  right: 46px;
+  background-image: url(img/photo.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .form {
@@ -263,6 +275,11 @@ section {
   line-height: 150%;
   color: #55565a;
   opacity: 0.7;
+}
+
+.img-box {
+  border-radius: 0 30px 30px 0;
+  overflow: hidden;
 }
 
 .checkbox-wrapper {
