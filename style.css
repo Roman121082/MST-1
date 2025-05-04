@@ -212,6 +212,11 @@ section {
   line-height: 140%;
 }
 
+.img-2,
+.img-3 {
+  height: 100%;
+}
+
 .form-wrapper {
   position: relative;
   display: flex;

@@ -53,6 +53,14 @@
     display: none;
   }
 
+  .img-4 {
+    width: 100%;
+  }
+
+  .img-box {
+    border-radius: 0;
+  }
+
   .form {
     display: block;
     margin: 0 auto;
